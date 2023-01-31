@@ -14,6 +14,7 @@ $(LIBFT_LIB) :
 		make -C libft so_long
 
 $(NAME) : $(OBJ) $(LIBFT_LIB) 
+		make -C libft so_long
 		$(CC) $(FLAGS) -o $(NAME) $(OBJ) $(LIBFT_LIB) 
 
 clean :

@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 22:24:29 by mudoh             #+#    #+#             */
-/*   Updated: 2022/12/07 16:22:17 by mudoh            ###   ########.fr       */
+/*   Updated: 2023/01/31 14:36:35 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <stdlib.h> 
 # include <stddef.h>
 # include <stdint.h>
+# include "get_next_line.h"
+# include "ft_printf.h"
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);

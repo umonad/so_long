@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bongnl_utils.c                                     :+:      :+:    :+:   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 19:44:23 by mudoh             #+#    #+#             */
-/*   Updated: 2023/01/17 19:44:53 by mudoh            ###   ########.fr       */
+/*   Updated: 2023/01/31 14:35:16 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int	ft_strlen(char *str)
+int	ft_strlenn(char *str)
 {
 	int	i;
 
@@ -24,7 +24,7 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strchrr(char *s, int c)
 {
 	int		i;
 	char	*p;
@@ -33,7 +33,7 @@ char	*ft_strchr(char *s, int c)
 	if (!s)
 		return (NULL);
 	if (c == '\0')
-		return ((char *)&s[ft_strlen(s)]);
+		return ((char *)&s[ft_strlenn(s)]);
 	p = (char *)s;
 	while (s[i])
 	{
@@ -45,7 +45,7 @@ char	*ft_strchr(char *s, int c)
 	return (0);
 }
 
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_strjoinn(char *s1, char *s2)
 {
 	size_t	i;
 	size_t	j;
@@ -58,7 +58,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		s1 = (char *)malloc(sizeof(char) * 1);
 		s1[0] = '\0';
 	}
-	p = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	p = malloc(sizeof(char) * (ft_strlenn(s1) + ft_strlenn(s2) + 1));
 	if (!p)
 		return (NULL);
 	while (s1[++i])

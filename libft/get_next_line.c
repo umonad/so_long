@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 19:44:30 by mudoh             #+#    #+#             */
-/*   Updated: 2023/01/25 14:07:33 by mudoh            ###   ########.fr       */
+/*   Updated: 2023/01/31 14:34:53 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*read_and_addtotmp(char *tmp, int fd)
 	buffer = malloc(sizeof(char) * BUFFER_SIZE + 1);
 	if (!buffer)
 		return (NULL);
-	while (!ft_strchr(tmp, '\n'))
+	while (!ft_strchrr(tmp, '\n'))
 	{
 		check = read(fd, buffer, BUFFER_SIZE);
 		if (check == -1)
@@ -30,7 +30,7 @@ char	*read_and_addtotmp(char *tmp, int fd)
 			return (NULL);
 		}
 		buffer[check] = '\0';
-		tmp = ft_strjoin(tmp, buffer);
+		tmp = ft_strjoinn(tmp, buffer);
 		if (check == 0 && tmp)
 		{
 			free(buffer);
@@ -85,7 +85,7 @@ char	*collect_andaddtotmp(char *tmp)
 		free(tmp);
 		return (NULL);
 	}
-	rest = malloc(sizeof(char) * (ft_strlen(tmp) - i));
+	rest = malloc(sizeof(char) * (ft_strlenn(tmp) - i));
 	if (!rest)
 		return (NULL);
 	i = i + 1;

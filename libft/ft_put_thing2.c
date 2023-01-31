@@ -6,13 +6,13 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 22:51:30 by mudoh             #+#    #+#             */
-/*   Updated: 2023/01/10 22:51:54 by mudoh            ###   ########.fr       */
+/*   Updated: 2023/01/31 14:36:00 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_strlen(const char *s)
+int	ft_strrlen(const char *s)
 {
 	int	i;
 

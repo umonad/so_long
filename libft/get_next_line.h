@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:59:51 by mudoh             #+#    #+#             */
-/*   Updated: 2023/01/25 12:03:59 by mudoh            ###   ########.fr       */
+/*   Updated: 2023/01/31 14:34:23 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@
 # endif
 
 char	*get_next_line(int fd);
-char	*ft_strchr(char *s, int c);
-char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strchrr(char *s, int c);
+char	*ft_strjoinn(char *s1, char *s2);
 char	*collect_andaddtotmp(char *tmp);
 char	*extract_and_addtores(char *tmp);
 char	*read_and_addtotmp(char *tmp, int fd);
-int		ft_strlen(char *str);
+int		ft_strlenn(char *str);
 
 #endif
