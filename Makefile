@@ -1,5 +1,6 @@
 NAME = so_long
-SRC = so_long.c
+SRC = so_long.c\
+	checkMap.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
 RM = rm -rf
