@@ -18,10 +18,11 @@ $(NAME) : $(OBJ) $(LIBFT_LIB)
 		$(CC) $(FLAGS) -o $(NAME) $(OBJ) $(LIBFT_LIB) 
 
 clean :
-		make -C libft fclean 
+		make -C libft clean 
 		$(RM) $(OBJ)
 
 fclean:		clean
+		make -C libft fclean 
 		$(RM) $(NAME)
 
 re:		fclean $(NAME)
