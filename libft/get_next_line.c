@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 19:44:30 by mudoh             #+#    #+#             */
-/*   Updated: 2023/01/31 14:34:53 by mudoh            ###   ########.fr       */
+/*   Updated: 2023/05/07 17:17:59 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,11 +96,13 @@ char	*collect_andaddtotmp(char *tmp)
 	return (rest);
 }
 
-char	*get_next_line(int fd)
+char	*get_next_line(int fd, int val)
 {
 	static char		*tmp;
 	char			*res;
 
+	if (val)
+		return (free(tmp), NULL);
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
 	tmp = read_and_addtotmp(tmp, fd);

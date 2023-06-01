@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:59:51 by mudoh             #+#    #+#             */
-/*   Updated: 2023/01/31 14:34:23 by mudoh            ###   ########.fr       */
+/*   Updated: 2023/05/02 18:10:39 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 #  define BUFFER_SIZE 1
 # endif
 
-char	*get_next_line(int fd);
+char	*get_next_line(int fd, int val);
 char	*ft_strchrr(char *s, int c);
 char	*ft_strjoinn(char *s1, char *s2);
 char	*collect_andaddtotmp(char *tmp);
