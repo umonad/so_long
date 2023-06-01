@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 15:16:36 by mudoh             #+#    #+#             */
-/*   Updated: 2023/06/01 18:57:43 by mudoh            ###   ########.fr       */
+/*   Updated: 2023/06/01 19:09:18 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,7 @@ void	input_maxou(t_data *data, int choice)
 {
 	int						a;
 	int						b;
-	static const t_verif	funcs[4];
-
-	funcs[4] = {&verifright, &verifleft, &verifdown, &verifup};
-	funcs[4] = {&verifright, &verifleft, &verifdown, &verifup};
+	static const t_verif	funcs[4] = {&verifright, &verifleft, &verifdown, &verifup};
 	a = ((choice == 3) * 1) + ((choice == 4) * -1);
 	b = ((choice == 1) * 1) + ((choice == 2) * -1);
 	if (funcs[choice - 1](data->jeux) == 2 && check_c(data->jeux) == 0)
